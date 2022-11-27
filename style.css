@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh ;
+  background: linear-gradient(#007bb2, #253d70);
+ }
+
+ .card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(18, 16, 16, 0.25);
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card .poster::before {
+  content: "";
+  position: absolute;
+  bottom: -180px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #1064a6 50%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .poster::before{
+  bottom: 0px;
+}
+.card:hover .poster img {
+  transform: translateY(-50px);
+  filter: blur(5px);
+}
+
+.card .avatar {
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+}
+.card:hover .avatar {
+  bottom: 40px;
+}
+.card .avatar .logo {
+  max-width: 180px;
+}
+
+.card .avatar h3{
+  font-size: 14px;
+  color: #fff;
+}
+.card .avatar .rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.card .avatar .rating .fa-star{
+  color: #f7f406;
+  font-size: 1em;
+}
+
+.card .avatar .rating span {
+  color:#fff;
+}
+.card .avatar .genre {
+  position: relative ;
+  margin-top: 7px;
+}
+.card .avatar .genre span {
+  padding: 2px 5px;
+  color: #fff;
+  background: #3cade1;
+  border-radius: 5px;
+}
+
+.card .avatar .genre span:nth-child(2){
+  background: #ff5722;
+
+}
+
+.card .avatar .resumo {
+  color: #fff;
+  margin-top: 10px;
+}
+.card .avatar .elenco {
+  position: relative;
+  
+}
+.card .avatar .elenco h4 {
+  color: #fff;
+  margin-top: 10px;
+
+}
+
+.card .avatar .elenco ul {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  gap: 9px;
+
+}
+.card .avatar .elenco ul li{
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.card .avatar .elenco ul li img {
+  max-width: 100%;
+
+}
+
+
+
+
