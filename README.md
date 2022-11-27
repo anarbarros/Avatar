@@ -1,10 +1,10 @@
 # AVATAR POSTER
 
+Card  do novo filme do Avatar.
+
+
 ![preview](./.github/preview.png)
-
-Card do novo filme do Avatar
-
-[🔗Clique aqui para acessar](https://anarbarros.github.io/)
+[🔗Clique aqui para acessar](https://anarbarros.github.io/Avatar/)
 
 ## 👩‍💻 Tecnologias utilizadas
 
